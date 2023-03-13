@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
 }
 
 img{
@@ -11,4 +14,19 @@ img{
 
 ul,ol{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 1321px;
+    margin: 0 auto;
 }
