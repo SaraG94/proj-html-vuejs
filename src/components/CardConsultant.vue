@@ -33,7 +33,7 @@
     text-align: center;
     gap: 15px;
     padding: 30px 32px;
-    max-width: 477px;
+    min-width: 477px;
     border-radius: 10px;
     box-shadow: 0px 10px 8px #dedede;
     background-color: white;

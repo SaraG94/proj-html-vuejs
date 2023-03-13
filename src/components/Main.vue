@@ -71,7 +71,6 @@ section.presentation{
 }
 
 .card{
-    flex-basis: calc(100% /2);
-    padding-left: 110px;
+    padding-left: 105px;
 }
 </style>
