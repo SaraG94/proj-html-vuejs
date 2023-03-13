@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faPhone,faAngleDown)
+library.add(faPhone,faAngleDown,faArrowRight)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
