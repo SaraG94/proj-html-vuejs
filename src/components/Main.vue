@@ -66,13 +66,13 @@
                     <div class="relations">
                         <h2>We build relationships</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus nostrum expedita suscipit quia accusamus quis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam quibusdam rerum.
                         </p>
                     </div>
                     <div class="focus">
                         <h2>Proprietary processes</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus nostrum expedita suscipit quia accusamus quis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam quibusdam rerum.
                         </p>
                     </div>
                 </div>
@@ -156,6 +156,7 @@ section.us{
 .we-do .row{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 110px;
 
     .col-6{
         flex-basis: calc((100% /12)*6);
@@ -190,6 +191,26 @@ section.us{
 .figure{
     display: flex;
     justify-content: end;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap:75px;
+
+    .relations,
+    .focus{
+        display: flex;
+        flex-direction: column;
+        gap:28px;
+        padding: 0 136px 0 61px;
+    }
+
+    .relations h2,
+    .focus h2{
+        text-transform: capitalize;
+        font-size: 32px;
+    }
 }
 
 </style>
