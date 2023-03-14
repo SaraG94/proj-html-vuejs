@@ -122,7 +122,7 @@ section.services{
         gap: 13px;
     }
     .service__title{
-        font-size: 56px;
+        font-size: 54px;
         margin-top: 15px;
     }
 }
