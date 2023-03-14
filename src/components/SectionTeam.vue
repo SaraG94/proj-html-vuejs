@@ -37,9 +37,9 @@
                 <div class="col-4 " v-for="member in members" :key="member.id">
                     <div class="card-member">
                         <img :src="member.picture" alt="">
-                        <p class="option">
+                        <h2 class="option">
                             {{ member.text }}
-                        </p>
+                        </h2>
                         <div class="stat">
                             <h3 class="numb-stat">{{ member.result }}</h3>
                             <p class="descrition-stat">
@@ -61,7 +61,7 @@
 section.team{
     padding: 100px 0;
 }
-section.team .container{
+.container{
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -90,6 +90,12 @@ section.team .container{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    .option{
+        font-size: 32px;
+    }
+    .numb-stat{
+        font-size: 54px;
+    }
 }
 
 .stat::before{
@@ -98,7 +104,6 @@ section.team .container{
     margin-bottom: 30px;
     border-bottom: 1px dashed #F2F2F2;
 }
-
 .more .orange{
     padding: 18px 41px;
 }
