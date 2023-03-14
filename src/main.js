@@ -11,9 +11,10 @@ import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { faChartSimple} from '@fortawesome/free-solid-svg-icons'
 import { faRankingStar} from '@fortawesome/free-solid-svg-icons'
 import { faChartPie} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass,faSquarePlus,faArrowUpWideShort} from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faPhone,faAngleDown,faArrowRight,faChartSimple,faRankingStar,faChartPie)
+library.add(faPhone,faAngleDown,faArrowRight,faChartSimple,faRankingStar,faChartPie,faMagnifyingGlass,faSquarePlus,faArrowUpWideShort)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
