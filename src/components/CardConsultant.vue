@@ -17,7 +17,7 @@
         <input type="text" placeholder="Your Name*">
         <input type="email" placeholder="Your Email*">
         <input type="text" placeholder="Your Phone Number*">
-        <button>Get a Callback</button>
+        <button class="orange">Get a Callback</button>
         <p class="privacy">
             By submitting my data I agree to be contacted
         </p>
@@ -63,8 +63,6 @@
 
     button{
         padding: 17px 0;
-        color: white;
-        background-color: $orange-color;
     }
 
     input{

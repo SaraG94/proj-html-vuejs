@@ -1,76 +1,101 @@
 <script>
-    import CardConsultant from './CardConsultant.vue';
+    import Presentation from './Presentation.vue';
     export default{
         components:{
-            CardConsultant
+            Presentation
         }
     }
 </script>
 
 <template>
     <main>
-        <section class="presentation">
-            <div class="container">
-                <div class="our-focus">
-                    <h1 class="title">
-                        Unlock your online growth potential
-                    </h1>
-                    <p class="text-descrition">
-                        Online marketing to secure costumer retention, leads, and sales. We focus on the bigger picture.
+      <Presentation/>
+      <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/img/sales-development.png" alt="">
+                </div>
+                <div class="col-4 service">
+                    <div class="title">
+                        <h4 class="subtitle">
+                            <font-awesome-icon class="icone-subtitle blue" icon="fa-solid fa-chart-simple"/>
+                            business growth
+                        </h4>
+                        <h1 class="service__title">
+                            Increase brand awareness
+                        </h1>
+                    </div>
+                  
+                    <p class="service-descrition">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dicta aspernatur animi fugiat error eligendi unde, officiis eaque? Provident nostrum officiis aperiam iusto!
                     </p>
-                    <button>
-                        Our Services
-                        <font-awesome-icon class="" icon="fa-solid fa-arrow-right"/>
+                    <button class="orange">
+                        Get a Consultation
                     </button>
                 </div>
-                <!-- card -->
-                <div class="card">
-                    <CardConsultant/>
-                </div>
             </div>
-        </section>
+        </div>
+      </section>
     </main>
 </template>
   
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 
-section.presentation{
-    background-image: url('/marketing-intro.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
+section.services{
+    margin-top: -30px;
+    background-color: white;
 }
-.container{
+.row{
     display: flex;
+    justify-content: space-around;
+    padding: 150px 0;
+
+    .col-5{
+        flex-basis: calc((100% /12)*5);
+    }
+
+    .col-4{
+        flex-basis: calc((100% /12)*4);
+    }
 }
-.our-focus{
-    flex-basis: calc(100% /2);
-    color: white;
+
+.service{
     display: flex;
     flex-direction: column;
-    gap: 45px;
-
-    .title{
-        margin-top: 20px;
-        font-size: 72px;
-        text-transform: capitalize;
-    }
-
-    .text-descrition{
-        font-size: 29px;
-    }
+    gap: 36px;
 
     button{
+        max-width: max-content;
+        padding: 15px 38px;
+    }
+}
+.service .title{
+    text-transform: capitalize;
+    .subtitle{
         display: flex;
         align-items: center;
-        gap: 10px;
-        padding: 20px 42px;
-        max-width: max-content;
+        gap: 13px;
+    }
+    .service__title{
+        font-size: 56px;
+        margin-top: 15px;
     }
 }
 
-.card{
-    padding-left: 105px;
+.service-descrition{
+    line-height: 32px;
+}
+
+.icone-subtitle{
+    color: white;
+    border-radius: 999px;
+    font-size: 15px;
+    padding: 10px;
+    aspect-ratio: 1;
+}
+.icone-subtitle.blue{
+    background-color: #0064FE;
 }
 </style>

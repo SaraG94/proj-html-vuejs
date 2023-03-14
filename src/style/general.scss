@@ -1,3 +1,4 @@
+@use '../style/partials/variables' as *;
 *{
     margin: 0;
     padding: 0;
@@ -28,4 +29,9 @@ button{
 .container{
     max-width: 1321px;
     margin: 0 auto;
+}
+
+button.orange{
+    color: white;
+    background-color: $orange-color;
 }
