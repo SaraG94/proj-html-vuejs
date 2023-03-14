@@ -43,6 +43,66 @@
         </div>
       </div>
       <SectionTeam/>
+      <section class="us">
+        <div class="container we-do">
+            <div class="row">
+                <div class="col-6">
+                    <div class="why-us">
+                        <h2 class="why-us__title">
+                            We boost our clients' bottom line by optimizing their growth potential.
+                        </h2>
+                        <p class="why-us__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum omnis beatae, a atque at.
+                        </p>
+                        <button class="orange why-us__button">
+                            Why work with us
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 figure">
+                    <img src="/img/we-boost-our-clients-600x549.jpg" alt="">
+                </div>
+                <div class="col-6 info">
+                    <div class="relations">
+                        <h2>We build relationships</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus nostrum expedita suscipit quia accusamus quis?
+                        </p>
+                    </div>
+                    <div class="focus">
+                        <h2>Proprietary processes</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus nostrum expedita suscipit quia accusamus quis?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 top-quality">
+                    <div class="quality">
+                        <img src="" alt="">
+                        <div class="descrition">
+                            <h3>Accountability</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="quality">
+                        <img src="" alt="">
+                        <div class="descrition">
+                            <h3>Trasparency</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="quality">
+                        <img src="" alt="">
+                        <div class="descrition">
+                            <h3>Investement</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"></div>
+      </section>
     </main>
 </template>
   
@@ -88,4 +148,48 @@ button.phone{
     color: $orange-color;
     background-color: $light-orange;
 }
+
+////newsection
+section.us{
+    background-color: #F5F5F7;
+}
+.we-do .row{
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-6{
+        flex-basis: calc((100% /12)*6);
+    }
+}
+
+.why-us{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 63px 108px 0 54px;
+
+    .why-us__title,
+    .why-us__button{
+        text-transform: capitalize;
+    }
+
+    .why-us__title{
+        font-size: 54px;
+    }
+
+    .why-us__text{
+        font-size: 24px;
+    }
+
+    .why-us__button{
+        max-width: max-content;
+        padding:17px 39px;
+    }
+}
+
+.figure{
+    display: flex;
+    justify-content: end;
+}
+
 </style>
