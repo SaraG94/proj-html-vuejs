@@ -32,7 +32,26 @@
                         title:'Investement',
                         text:'Lorem ipsum dolor sit amet.',
                     },
-                ]
+                ],
+
+                awards:[
+                    {
+                        img:'/img/award-a.png',
+                        text:'winner seo master MAGT smart start award 2017',
+                    },
+                    {
+                        img:'/img/award-b.png',
+                        text:'Top social media agencies next partner 2018',
+                    },
+                    {
+                        img:'/img/award-c.png',
+                        text:'10 fastest growing abstract solution providers 2019',
+                    },
+                    {
+                        img:'/img/award-d.png',
+                        text:'national excellence agencie award winner 2020',
+                    },
+                ],
             }
         }
     }
@@ -80,7 +99,21 @@
                 </div>
             </div>
         </div>
-        <div class="container"></div>
+        <div class="container awards">
+            <div class="row awards__title">
+                <h1>Awards</h1>
+            </div>
+            <div class="row awards">
+                <div class="col-3" v-for="award in awards" :key="award.id">
+                    <figure class="award-info">
+                        <img :src=" award.img " alt="">
+                        <figcaption>
+                            <p>{{ award.text }}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
     
 </template>
@@ -123,7 +156,6 @@ section.us{
     .why-us__button{
         max-width: max-content;
         padding:17px 39px;
-        font-weight: bold;
     }
 }
 
@@ -177,6 +209,33 @@ section.us{
     .descrition h3{
         font-size: 24px;
         margin-bottom: 19px;
+    }
+}
+///////// fine first row
+/////////second row
+.container.awards{
+    padding-top: 120px;
+}
+.awards__title{
+    text-align: center;
+}
+.awards__title h1{
+    font-size: 32px;
+}
+.row.awards{
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+    padding-top: 66px;
+
+    .col-3{
+        flex-basis: calc((100%/12)*3);
+        padding: 0 39px;
+
+        figure img{
+            max-width: 175px;
+            margin: 0 auto;
+        }
     }
 }
 </style>
