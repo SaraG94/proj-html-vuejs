@@ -3,6 +3,11 @@
     export default{
         components:{
             CardConsultant
+        },
+        data(){
+            return{
+                
+            }
         }
     }
 </script>

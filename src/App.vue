@@ -5,6 +5,11 @@
     components:{
       HeaderMain,
       Main
+    },
+    data(){
+        return{
+            
+        }
     }
   }
 </script>
