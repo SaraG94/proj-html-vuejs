@@ -12,7 +12,7 @@
       <Presentation/>
       <section class="services">
         <div class="container">
-            <div class="row">
+            <div class="row business">
                 <div class="col-5">
                     <img src="/img/sales-development.png" alt="">
                 </div>
@@ -24,6 +24,52 @@
                         </h4>
                         <h1 class="service__title">
                             Increase brand awareness
+                        </h1>
+                    </div>
+                  
+                    <p class="service-descrition">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dicta aspernatur animi fugiat error eligendi unde, officiis eaque? Provident nostrum officiis aperiam iusto!
+                    </p>
+                    <button class="orange">
+                        Get a Consultation
+                    </button>
+                </div>
+            </div>
+            <div class="row investor">
+                <div class="col-5">
+                    <img src="/img/strategic-marketing.png" alt="">
+                </div>
+                <div class="col-4 service">
+                    <div class="title">
+                        <h4 class="subtitle">
+                            <font-awesome-icon class="icone-subtitle yellow" icon="fa-solid fa-ranking-star"/>
+                            Investors in people
+                        </h4>
+                        <h1 class="service__title">
+                            In-house sales training
+                        </h1>
+                    </div>
+                  
+                    <p class="service-descrition">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dicta aspernatur animi fugiat error eligendi unde, officiis eaque? Provident nostrum officiis aperiam iusto!
+                    </p>
+                    <button class="orange">
+                        Get a Consultation
+                    </button>
+                </div>
+            </div>
+            <div class="row digital">
+                <div class="col-5">
+                    <img src="/img/digital.png" alt="">
+                </div>
+                <div class="col-4 service">
+                    <div class="title">
+                        <h4 class="subtitle">
+                            <font-awesome-icon class="icone-subtitle acquagreen" icon="fa-solid fa-chart-pie"/>
+                            Social media analysis
+                        </h4>
+                        <h1 class="service__title">
+                            Harness your social proof
                         </h1>
                     </div>
                   
@@ -60,7 +106,9 @@ section.services{
         flex-basis: calc((100% /12)*4);
     }
 }
-
+.row.investor{
+    flex-direction: row-reverse;
+}
 .service{
     display: flex;
     flex-direction: column;
@@ -91,11 +139,17 @@ section.services{
 .icone-subtitle{
     color: white;
     border-radius: 999px;
-    font-size: 15px;
+    //font-size: 15px;
     padding: 10px;
     aspect-ratio: 1;
 }
 .icone-subtitle.blue{
     background-color: #0064FE;
+}
+.icone-subtitle.yellow{
+    background-color: #F8CC23;
+}
+.icone-subtitle.acquagreen{
+    background-color: #3BC77B;
 }
 </style>
