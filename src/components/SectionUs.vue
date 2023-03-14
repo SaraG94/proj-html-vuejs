@@ -104,9 +104,9 @@
                 <h1>Awards</h1>
             </div>
             <div class="row awards">
-                <div class="col-3" v-for="award in awards" :key="award.id">
+                <div class="col-3" v-for="(award, index) in awards" :key="award.id">
                     <figure class="award-info">
-                        <img :src=" award.img " alt="">
+                        <img :src=" award.img " alt="" >
                         <figcaption>
                             <p>{{ award.text }}</p>
                         </figcaption>
@@ -121,7 +121,7 @@
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 section.us{
-    background-color: #F5F5F7;
+    background-color: $backgruond-secondary;
     padding: 120px 0;
 }
 .we-do .row{

@@ -3,14 +3,16 @@
     import SectionServices from './SectionServices.vue';
     import SectionBrands from './SectionBrands.vue';
     import SectionTeam from './SectionTeam.vue';
-    import SectionUs from './SectionUs.vue'
+    import SectionUs from './SectionUs.vue';
+    import SectionReview from './SectionReview.vue';
     export default{
         components:{
             Presentation,
             SectionServices,
             SectionBrands,
             SectionTeam,
-            SectionUs
+            SectionUs,
+            SectionReview
         },
         data(){
             return{
@@ -46,6 +48,7 @@
       </div>
       <SectionTeam/>
       <SectionUs/>
+      <SectionReview/>
     </main>
 </template>
   
