@@ -24,9 +24,14 @@
 </template>
   
 <style lang="scss" scoped>
+@use '../style/partials/variables' as *;
 .suggest-blog h2{
     font-size: 32px;
     text-transform: capitalize;
     margin-top: 30px;
+}
+
+.suggest-blog:hover{
+    color:$primary-color;
 }
 </style>

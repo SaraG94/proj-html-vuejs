@@ -78,5 +78,9 @@
         font-size: 13px;
         color:$text-secondDark;
     }
+
+    input:hover{
+        border: 1px solid $primary-color;
+    }
 }
 </style>

@@ -1,5 +1,9 @@
 <script>
+    import CardTeamMember from './CardTeamMember.vue';
     export default{
+        components:{
+            CardTeamMember
+        },
         data(){
             return{
                 members : [
@@ -35,18 +39,7 @@
             </div>
             <div class="row cards-team">
                 <div class="col-4 " v-for="member in members" :key="member.id">
-                    <div class="card-member">
-                        <img :src="member.picture" alt="">
-                        <h2 class="option">
-                            {{ member.text }}
-                        </h2>
-                        <div class="stat">
-                            <h3 class="numb-stat">{{ member.result }}</h3>
-                            <p class="descrition-stat">
-                                {{ member.descritionResult }}
-                            </p>
-                        </div>
-                    </div>
+                    <CardTeamMember :element="member"/>
                 </div>
             </div>
             <div class="row more">
@@ -84,24 +77,6 @@ section.team{
         flex-basis: calc((100% /12)*4);
         padding: 0 20px;
     }
-}
-.card-member{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    .option{
-        font-size: 32px;
-    }
-    .numb-stat{
-        font-size: 54px;
-    }
-}
-
-.stat::before{
-    content: '';
-    display: block;
-    margin-bottom: 30px;
-    border-bottom: 1px dashed #F2F2F2;
 }
 .more .orange{
     padding: 18px 41px;

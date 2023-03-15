@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <h2>Drive Leads and Sales with Avada</h2>
-                <button class="phone">
+                <button class="light">
                     <font-awesome-icon class="phone-icone" icon="fa-solid fa-phone"/>
                     (555)802-1234
                 </button>
@@ -91,10 +91,8 @@
     max-width: 65px;
 }
 
-button.phone{
+button.light{
     margin-left: auto;
     padding: 15px 39px;
-    color: $primary-color;
-    background-color: $light-primary;
 }
 </style>

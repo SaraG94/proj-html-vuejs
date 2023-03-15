@@ -38,6 +38,16 @@ button.orange{
     text-transform: capitalize;
 }
 
+button.light{
+    background-color: $light-primary;
+    color: $primary-color;
+}
+////hover button
 button.orange:hover{
     background-color: $hover-primary;
+}
+
+button.light:hover{
+    background-color: $primary-color;
+    color: white;
 }

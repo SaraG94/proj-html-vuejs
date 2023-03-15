@@ -40,7 +40,7 @@
             (555)802-1234
           </p>
         </div>
-        <button class="quote">
+        <button class="light">
           <strong>Free Quote</strong>
         </button>
       </div>
@@ -75,15 +75,13 @@
   gap:24px;
   align-items: center;
   
-  .quote{
+  .light{
     padding: 18px 40px;
-    background-color: $light-primary;
   }
 }
 
 .home-menu,
-.phone-icone,
-button.quote{
+.phone-icone{
   color: $primary-color;
 }
 .home-menu{
