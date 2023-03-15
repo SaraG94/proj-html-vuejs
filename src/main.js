@@ -12,9 +12,12 @@ import { faChartSimple} from '@fortawesome/free-solid-svg-icons'
 import { faRankingStar} from '@fortawesome/free-solid-svg-icons'
 import { faChartPie} from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass,faSquarePlus,faArrowUpWideShort} from '@fortawesome/free-solid-svg-icons'
+import {faFacebook,faTwitter,faYoutube,faInstagram,faTiktok,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {faCopyright} from '@fortawesome/free-regular-svg-icons'
+
 
 /* add icons to the library */
-library.add(faPhone,faAngleDown,faArrowRight,faChartSimple,faRankingStar,faChartPie,faMagnifyingGlass,faSquarePlus,faArrowUpWideShort)
+library.add(faPhone,faAngleDown,faArrowRight,faChartSimple,faRankingStar,faChartPie,faMagnifyingGlass,faSquarePlus,faArrowUpWideShort,faFacebook,faTwitter,faYoutube,faInstagram,faTiktok,faLinkedin,faCopyright)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
