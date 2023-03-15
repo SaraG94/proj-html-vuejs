@@ -5,6 +5,7 @@
     import SectionTeam from './SectionTeam.vue';
     import SectionUs from './SectionUs.vue';
     import SectionReview from './SectionReview.vue';
+    import SectionMarketing from './SectionMarketing.vue';
     export default{
         components:{
             Presentation,
@@ -12,7 +13,8 @@
             SectionBrands,
             SectionTeam,
             SectionUs,
-            SectionReview
+            SectionReview,
+            SectionMarketing
         },
         data(){
             return{
@@ -49,6 +51,7 @@
       <SectionTeam/>
       <SectionUs/>
       <SectionReview/>
+      <SectionMarketing/>
     </main>
 </template>
   
@@ -94,6 +97,4 @@ button.phone{
     color: $orange-color;
     background-color: $light-orange;
 }
-
-////newsection
 </style>
