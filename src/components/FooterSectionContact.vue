@@ -79,6 +79,14 @@ section.contact-us{
     }
 }
 
+.reviw::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #212121;
+}
+
 .author .occupation{
     font-size: 15px;
     margin-top: 9px;
