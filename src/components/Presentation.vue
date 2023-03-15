@@ -23,7 +23,7 @@
                 <p class="text-descrition">
                     Online marketing to secure costumer retention, leads, and sales. We focus on the bigger picture.
                 </p>
-                <button>
+                <button class="services">
                     Our Services
                     <font-awesome-icon class="" icon="fa-solid fa-arrow-right"/>
                 </button>
@@ -66,7 +66,7 @@ section.presentation{
         font-size: 29px;
     }
 
-    button{
+    button.services{
         display: flex;
         align-items: center;
         gap: 10px;
@@ -81,5 +81,12 @@ section.presentation{
     .shadow{
         box-shadow: 0px 10px 8px #dedede;
     }
+}
+////hover
+button.services:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid currentColor;
+    font-weight: bold;
 }
 </style>
