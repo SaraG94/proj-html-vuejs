@@ -24,11 +24,11 @@
           Home
           <font-awesome-icon class="arrow" icon="fa-solid fa-angle-down"/>
         </a>
-        <a href="#">
+        <a href="#" class="menu-item">
           Services
           <font-awesome-icon class="arrow" icon="fa-solid fa-angle-down"/>
         </a>
-        <a href="#" v-for="el in menu" :key="el.id"> 
+        <a href="#" v-for="el in menu" :key="el.id" class="menu-item"> 
           {{ el }}
         </a>
       </div>
@@ -50,7 +50,6 @@
 
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
-
 .container{
   display: flex;
   align-items: center;
@@ -85,6 +84,12 @@
   color: $primary-color;
 }
 .home-menu{
+  border-bottom: 3px solid currentColor;
+}
+
+//hover
+.menu-item:hover{
+  color: $primary-color;
   border-bottom: 3px solid currentColor;
 }
 </style>
