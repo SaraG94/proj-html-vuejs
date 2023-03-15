@@ -39,7 +39,6 @@
     padding: 30px 32px;
     min-width: 477px;
     border-radius: 10px;
-    box-shadow: 0px 10px 8px #dedede;
     background-color: white;
 
     .profile-img{

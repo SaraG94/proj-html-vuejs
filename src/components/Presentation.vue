@@ -30,7 +30,7 @@
             </div>
             <!-- card -->
             <div class="card">
-                <CardConsultant/>
+                <CardConsultant class="shadow"/>
             </div>
         </div>
     </section>
@@ -77,5 +77,9 @@ section.presentation{
 
 .card{
     padding-left: 105px;
+
+    .shadow{
+        box-shadow: 0px 10px 8px #dedede;
+    }
 }
 </style>
