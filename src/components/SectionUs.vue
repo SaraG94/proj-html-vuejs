@@ -139,14 +139,10 @@ section.us{
     flex-direction: column;
     gap: 35px;
     padding: 63px 108px 0 54px;
-
-    .why-us__title,
-    .why-us__button{
-        text-transform: capitalize;
-    }
-
+    
     .why-us__title{
         font-size: 54px;
+        text-transform: capitalize;
     }
 
     .why-us__text{

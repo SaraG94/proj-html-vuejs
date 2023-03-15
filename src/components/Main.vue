@@ -94,7 +94,7 @@
 button.phone{
     margin-left: auto;
     padding: 15px 39px;
-    color: $orange-color;
-    background-color: $light-orange;
+    color: $primary-color;
+    background-color: $light-primary;
 }
 </style>

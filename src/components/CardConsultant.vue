@@ -56,12 +56,12 @@
 
     .occupation{
         font-size: 19px;
-        color:$text-grey;
+        color:$text-secondDark;
     }
 
     .phone{
         margin-bottom: 15px;
-        color: $orange-color;
+        color: $primary-color;
     }
 
     button{
@@ -76,7 +76,7 @@
 
     .privacy{
         font-size: 13px;
-        color:$text-grey;
+        color:$text-secondDark;
     }
 }
 </style>

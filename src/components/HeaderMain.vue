@@ -77,24 +77,16 @@
   
   .quote{
     padding: 18px 40px;
-    background-color: $light-orange;
+    background-color: $light-primary;
   }
 }
 
 .home-menu,
 .phone-icone,
 button.quote{
-  color: $orange-color;
+  color: $primary-color;
 }
 .home-menu{
   border-bottom: 3px solid currentColor;
 }
-// .home-menu::after{
-//   content: '';
-//   display: block;
-//   height: 3px;
-//   width: 100%;
-//   //margin-top: 5px;
-//   background-color: $orange-color;
-// }
 </style>

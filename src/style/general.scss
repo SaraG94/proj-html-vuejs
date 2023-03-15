@@ -33,7 +33,11 @@ button{
 
 button.orange{
     color: white;
-    background-color: $orange-color;
+    background-color: $primary-color;
     font-weight: bold;
     text-transform: capitalize;
+}
+
+button.orange:hover{
+    background-color: $hover-primary;
 }
