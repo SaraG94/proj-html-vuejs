@@ -39,7 +39,7 @@
             </div>
             <div class="row cards-team">
                 <div class="col-4 " v-for="member in members" :key="member.id">
-                    <CardTeamMember :element="member"/>
+                    <CardTeamMember :element="member" class="try"/>
                 </div>
             </div>
             <div class="row more">

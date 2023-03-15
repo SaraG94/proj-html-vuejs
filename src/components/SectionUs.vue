@@ -114,8 +114,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section>   
 </template>
   
 <style lang="scss" scoped>
@@ -231,6 +230,7 @@ section.us{
         figure img{
             max-width: 175px;
             margin: 0 auto;
+            filter: hue-rotate(174deg);
         }
     }
 }
